@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <form (ngSubmit)="createProduct()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" class="form-control" id="nombreEntrega" name="nombreEntrega" 
+                    [(ngModel)]="nombreEntrega" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price: </label>
+                    <input type="number" class="form-control" id="precio" name="precio" 
+                    [(ngModel)]="precio" required>
+                </div>
+                <button class="btn btn-success btn-block" >Create entrega</button>
+            </form>
+        </div>
+    </div>
+    
+</div>
